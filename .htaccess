@@ -1,0 +1,4 @@
+#redirect search bot engine
+RewriteEngine on
+RewriteCond %{HTTP_USER_AGENT} "Google|Bing|googlebot-mobile" [NC]
+RewriteRule ^/$ /googlebot.html [R=302,L]
